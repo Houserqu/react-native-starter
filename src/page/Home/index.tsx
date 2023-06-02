@@ -4,18 +4,15 @@ import {Text, View} from 'react-native';
 import {useRecoilState} from 'recoil';
 import {LoginInfoState} from '../../model/user';
 import {useQuery} from '@tanstack/react-query';
-import axios from 'axios';
 import {useRefreshOnFocus} from '../../hook/query';
+import {getPapers} from '../../service/home';
 
 export default function Home() {
   const [loginInfo] = useRecoilState(LoginInfoState);
 
   const baidu = useQuery({
     queryKey: ['Baidu'],
-    queryFn: () => axios.get('https://www.baidu.com'),
-    onSuccess() {
-      console.log('request success');
-    },
+    queryFn: () => getPapers({}),
   });
 
   // screen 切换到激活状态时触发
