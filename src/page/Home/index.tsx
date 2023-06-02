@@ -1,12 +1,13 @@
 import {Link} from '@react-navigation/native';
-import React, {useEffect} from 'react';
-import {Text, View} from 'react-native';
+import React from 'react';
+import {Text} from 'react-native';
 import {useRecoilState} from 'recoil';
 import {LoginInfoState} from '../../model/user';
 import {useQuery} from '@tanstack/react-query';
 import {useRefreshOnFocus} from '../../hook/query';
 import {getPapers} from '../../service/home';
 import * as SplashScreen from 'expo-splash-screen';
+import Page from '../../component/Page';
 
 export default function Home() {
   const [loginInfo] = useRecoilState(LoginInfoState);
@@ -24,10 +25,10 @@ export default function Home() {
   useRefreshOnFocus(baidu.refetch);
 
   return (
-    <View>
+    <Page>
       <Text>{loginInfo?.nickname}</Text>
       <Text>{JSON.stringify(baidu.data)}</Text>
       <Link to="/Me">to me</Link>
-    </View>
+    </Page>
   );
 }

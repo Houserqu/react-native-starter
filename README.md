@@ -1,5 +1,9 @@
 
-## 启动屏幕
+## 状态管理
+
+Recoil
+
+## 启动屏
 
 [expo-splash-screen](https://docs.expo.dev/develop/user-interface/splash-screen/)
 
