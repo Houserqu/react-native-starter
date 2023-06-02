@@ -18,6 +18,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {RootSiblingParent} from 'react-native-root-siblings';
 import RecoilNexus from 'recoil-nexus';
 import GlobalLoading from './component/GlobalLoading';
+import * as SplashScreen from 'expo-splash-screen';
 
 // @ts-ignore
 Reactotron.setAsyncStorageHandler(AsyncStorage) // AsyncStorage would either come from `react-native` or `@react-native-community/async-storage` depending on where you get it from
@@ -41,6 +42,9 @@ onlineManager.setEventListener(setOnline => {
     setOnline(!!state.isConnected);
   });
 });
+
+// 防止启动屏自动消失
+SplashScreen.preventAutoHideAsync();
 
 function App(): JSX.Element {
   // 监听 app focus，通知 react-query

@@ -16,6 +16,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		DA0C7840DB2A4BF7CA151500 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F68EDD225311006661D155 /* ExpoModulesProvider.swift */; };
 		DA8A51FC92D35EC9D63B15D9 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B02DD131D80DA1979BFE43E /* ExpoModulesProvider.swift */; };
+		6018A74E6E744EF4B60805CF /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47E336883424A82A4A4AFEA /* SplashScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-newrn-newrnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newrn-newrnTests.release.xcconfig"; path = "Target Support Files/Pods-newrn-newrnTests/Pods-newrn-newrnTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2F68EDD225311006661D155 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-newrn-newrnTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		C47E336883424A82A4A4AFEA /* SplashScreen.storyboard */ = {isa = PBXFileReference; name = "SplashScreen.storyboard"; path = "newrn/SplashScreen.storyboard"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = file.storyboard; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				C47E336883424A82A4A4AFEA /* SplashScreen.storyboard */,
 			);
 			name = newrn;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				6018A74E6E744EF4B60805CF /* SplashScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
