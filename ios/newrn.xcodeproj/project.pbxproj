@@ -12,11 +12,11 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		6018A74E6E744EF4B60805CF /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47E336883424A82A4A4AFEA /* SplashScreen.storyboard */; };
 		7699B88040F8A987B510C191 /* libPods-newrn-newrnTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-newrn-newrnTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		DA0C7840DB2A4BF7CA151500 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F68EDD225311006661D155 /* ExpoModulesProvider.swift */; };
 		DA8A51FC92D35EC9D63B15D9 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B02DD131D80DA1979BFE43E /* ExpoModulesProvider.swift */; };
-		6018A74E6E744EF4B60805CF /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47E336883424A82A4A4AFEA /* SplashScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-newrn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newrn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = newrn/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-newrn-newrnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newrn-newrnTests.release.xcconfig"; path = "Target Support Files/Pods-newrn-newrnTests/Pods-newrn-newrnTests.release.xcconfig"; sourceTree = "<group>"; };
+		C47E336883424A82A4A4AFEA /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = newrn/SplashScreen.storyboard; sourceTree = "<group>"; };
 		E2F68EDD225311006661D155 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-newrn-newrnTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		C47E336883424A82A4A4AFEA /* SplashScreen.storyboard */ = {isa = PBXFileReference; name = "SplashScreen.storyboard"; path = "newrn/SplashScreen.storyboard"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = file.storyboard; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

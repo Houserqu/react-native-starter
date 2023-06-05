@@ -19,6 +19,8 @@ import {RootSiblingParent} from 'react-native-root-siblings';
 import RecoilNexus from 'recoil-nexus';
 import GlobalLoading from './component/GlobalLoading';
 import * as SplashScreen from 'expo-splash-screen';
+import TabBarIcon from './component/TabBarIcon';
+import Shop from './page/Shop';
 
 // @ts-ignore
 Reactotron.setAsyncStorageHandler(AsyncStorage) // AsyncStorage would either come from `react-native` or `@react-native-community/async-storage` depending on where you get it from
@@ -67,9 +69,26 @@ function App(): JSX.Element {
       <RootSiblingParent>
         <QueryClientProvider client={queryClient}>
           <NavigationContainer>
-            <Tab.Navigator initialRouteName="Home">
-              <Tab.Screen name="Home" component={Home} />
-              <Tab.Screen name="Me" component={Me} />
+            <Tab.Navigator
+              initialRouteName="Home"
+              screenOptions={({route}) => ({
+                tabBarIcon: ({focused}) => (
+                  <TabBarIcon focused={focused} route={route} />
+                ),
+                tabBarInactiveTintColor: 'gray',
+                tabBarActiveTintColor: '#2260ff',
+              })}>
+              <Tab.Screen
+                name="Home"
+                options={{title: '首页'}}
+                component={Home}
+              />
+              <Tab.Screen
+                name="Shop"
+                options={{title: '商城'}}
+                component={Shop}
+              />
+              <Tab.Screen name="Me" options={{title: '我的'}} component={Me} />
             </Tab.Navigator>
           </NavigationContainer>
         </QueryClientProvider>
